@@ -1,0 +1,236 @@
+/*
+ * Globals
+ */
+
+body {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #434857;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  font-weight: normal;
+  color: #333;
+}
+
+blockquote{
+  min-height: 100px;
+  margin-top: 20px;
+}
+
+.ng-valid.ng-dirty{
+  border-color: green;
+}    
+
+.ng-invalid.ng-dirty{
+  border-color: red;
+}
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+
+/*
+ * Masthead for nav
+ */
+
+.note-masthead {
+  background-color: #252830;
+  -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+          box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+}
+
+/* Nav links */
+.note-nav-item {
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 500;
+  color: #51586a;
+  text-transform: uppercase;
+}
+.note-nav-item:hover,
+.note-nav-item:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Active state gets a caret at the bottom */
+.note-nav .active {
+  color: #fff;
+}
+.note-nav .active:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+  vertical-align: middle;
+  content: " ";
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid;
+  border-left: 5px solid transparent;
+}
+
+
+/*
+ * note name and description
+ */
+
+.note-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.note-title {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 60px;
+  font-weight: normal;
+}
+.note-description {
+  font-size: 20px;
+  color: #999;
+}
+
+
+/*
+ * Main column and sidebar layout
+ */
+
+.note-main {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Sidebar modules for boxing content */
+.sidebar-module {
+  padding: 15px;
+  margin: 0 -15px 15px;
+}
+.sidebar-module-inset {
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar-module .list-group-item{
+  border-radius: 0px;
+  border-bottom: 0;
+}
+
+.sidebar-module .list-group:last-child{
+  border-bottom: 1px solid #ddd!important;
+}
+
+
+/* Pagination */
+.pager {
+  margin-bottom: 60px;
+  text-align: left;
+}
+.pager > li > a {
+  width: 140px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+
+/*
+ * note posts
+ */
+
+.red{
+  background: rgb(255, 138, 128)!important;
+}
+
+.yellow{
+  background: rgb(255, 209, 128)!important;;
+}
+
+.green{
+  background: rgb(204, 255, 144)!important;;
+}
+
+.orange{
+  background: rgb(255, 209, 128)!important;;
+}
+
+.red, .yellow, .green, .orange{
+  color: #333!important;
+}
+
+.note-post {
+  background: #f5f5f5;
+  padding: 15px;
+  margin-bottom: 30px;
+  min-height: 330px;
+}
+.note-post-title {
+  margin: 0 0 10;
+  font-size: 26px;
+}
+.note-post-author {
+  margin-bottom: 10px;
+  color: #999;
+}
+.note-post-categories{
+  margin-bottom: 10px;
+}
+.note-post-categories .label{
+  font-weight: lighter;
+  margin-right: 3px;
+}
+.note-post .btn{
+  margin-top: 10px;
+}
+.note-post hr{
+  border-color: #333;
+}
+.gallery ul{
+  margin-top: 10px;
+}
+.gallery ul li{
+  cursor: pointer;
+  margin-right: 1px;
+}
+li.small-image{
+  width: 50px;
+}
+
+li.small-image img{
+  width: 100%;
+}
+/*
+ * Footer
+ */
+
+.note-footer {
+  padding: 40px 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
+}
+.note-footer p:last-child {
+  margin-bottom: 0;
+}

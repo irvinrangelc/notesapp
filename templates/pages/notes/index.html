@@ -1,0 +1,13 @@
+<div
+ng-repeat="note in notes 
+| filter: {category: {name: activeCategory }}
+| filter: search">
+  <nw-note
+    header="note.header"
+    description="note.description"
+    created="note.createdOn"
+    author="note.author"
+    notecategories="note.category"
+    background="yellow">
+  </nw-note>
+</div>

@@ -1,0 +1,18 @@
+<div class="col-md-6">
+	<div class="note-post {{ background }}" title="{{ header }}">
+		<h2 class="note-post-title">{{ header }}</h2>
+		<p class="note-post-author">{{ created }} by <a>{{ author }}</a></p>
+		<div class="note-post-categories">
+			<span class="label label-default"
+				ng-repeat="notecategory in notecategories">
+					{{ notecategory.name }}
+			</span>
+		</div>
+		<p>{{ description }}</p>
+		<hr>
+		<div>
+			<button class="btn btn-primary">Edit</button>
+			<button class="btn btn-danger">Delete</button>
+		</div>
+	</div><!-- /.note-post -->
+</div>
