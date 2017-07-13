@@ -1,0 +1,25 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "description": "A notes app build with AngularJs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irvinrangelc/notesapp.git"
+  },
+  "author": "Irvin Rangel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/irvinrangelc/notesapp/issues"
+  },
+  "homepage": "https://github.com/irvinrangelc/notesapp#readme",
+  "devDependencies": {
+    "jasmine-core": "^2.6.4",
+    "karma": "^1.7.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.0"
+  }
+}
