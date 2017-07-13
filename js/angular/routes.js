@@ -21,9 +21,7 @@ angular.module("NoteWrangler").config(
 				controller:  'UsersShowController',
 				controllerAs: 'UsersShowCtrl'
 			})
-			.when('/', {
-				templateUrl: 'templates/pages/notes/index.html',
-			})
-			.otherwise({redirectTo: '/'});
+			.when('/', { redirectTo: '/notes'})
+			.otherwise({redirectTo: '/notes'});
 	}
 );
